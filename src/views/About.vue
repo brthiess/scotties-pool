@@ -77,15 +77,17 @@ h4 {
 }
 ul {
   list-style: none;
+  padding: 0 20px;
 }
 li {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   background: #eee;
-  margin: 20px;
+  margin: 30px auto;
   padding: 10px 30px;
   display: flex;
   height: 80px;
   align-items: center;
+  max-width: 400px;
 }
 
 .total-points {
@@ -99,6 +101,9 @@ li {
   font-size: 18px;
   display: flex;
   align-items: center;
+}
+.points-per-win-total-points {
+  margin-left: auto;
 }
 .total-points-text,
 .points-per-win-text {
@@ -114,10 +119,12 @@ li {
   margin-right: 20px;
   width: 60px;
   border-radius: 30px;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 .team-name {
-  font-size: 26px;
-  width: 200px;
+  font-size: 22px;
+  width: 180px;
   flex-shrink: 0;
 }
 img {
