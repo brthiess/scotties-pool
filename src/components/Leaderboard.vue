@@ -60,7 +60,7 @@ ul {
   padding: 0;
 }
 .leaderboard {
-  background: linear-gradient(to right, red, blue);
+  background: linear-gradient(to right, #0b4a87, #007272);
   height: 100px;
   display: flex;
   align-items: center;
