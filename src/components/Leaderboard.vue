@@ -1,12 +1,30 @@
 <template>
   <div class="leaderboard-container">
-    <div class="leaderboard">Leaderboard</div>
+    <div class="leaderboard">
+      <div class="logo">
+        <div class="top">&#9825;</div>
+        <div class="right">&#9825;</div>
+        <div class="bottom">&#9825;</div>
+        <div class="left">&#9825;</div>
+      </div>
+      <div class="text">
+        <span class="scotties">Scotties</span>
+        <span class="leaderboard-text">Leaderboard</span>
+      </div>
+    </div>
+    <div class="header">
+      <div class="place-header">Place</div>
+      <div class="team-name-header">Team Name</div>
+      <div class="points-header">Points</div>
+    </div>
     <ul>
       <li v-for="(leader, index) in leaders" :key="leader.teamName">
         <router-link class="link" :to="'/player/' + leader.id"></router-link>
         <div class="place">{{ index + 1 }}</div>
-        <div class="avatar"><img :src="leader.img" /></div>
-        <div class="name">{{ leader.teamName }}</div>
+        <div class="avatar-name">
+          <div class="avatar"><img :src="leader.img" /></div>
+          <div class="name">{{ leader.teamName }}</div>
+        </div>
         <div class="total-points">{{ leader.totalPoints }}</div>
       </li>
     </ul>
@@ -52,6 +70,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.leaderboard-container {
+  max-width: 600px;
+  margin: auto;
+}
+@media only screen and (min-width: 700px) {
+  .leaderboard-container {
+    margin-top: 50px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+  }
+}
 h3 {
   margin: 40px 0 0;
 }
@@ -59,14 +87,65 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+.logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+.top,
+.right,
+.left,
+.bottom {
+  position: absolute;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.533);
+}
+.top {
+  top: -17px;
+}
+.right {
+  transform: rotate(90deg);
+  top: 0px;
+  left: 17px;
+}
+.bottom {
+  top: 17px;
+  transform: rotate(180deg);
+}
+.left {
+  transform: rotate(-90deg);
+  top: 0px;
+  left: -17px;
+}
 .leaderboard {
-  background: linear-gradient(to right, #0b4a87, #007272);
+  background: linear-gradient(to right, #f40e04, #f40e04);
   height: 100px;
   display: flex;
   align-items: center;
   color: white;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 30px;
+  padding: 0 40px 0 60px;
+}
+.text {
+  display: flex;
+  flex-flow: column;
+  text-transform: uppercase;
+}
+.scotties {
+  font-size: 30px;
+}
+.leaderboard-text {
+  font-size: 20px;
+}
+.header {
+  text-transform: uppercase;
+  background: #666;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
 }
 li {
   display: flex;
@@ -88,11 +167,16 @@ li:nth-child(2n + 1) {
   font-weight: 600;
   width: 10px;
   flex-shrink: 0;
+  color: blue;
+}
+.avatar-name {
+  display: flex;
+  align-items: center;
 }
 .avatar {
   width: 50px;
   height: 50px;
-  flex-shrink: 0;
+  margin-right: 20px;
 }
 img {
   width: 100%;
@@ -104,6 +188,7 @@ img {
 }
 .name {
   width: 100px;
+  font-weight: bold;
 }
 .link {
   position: absolute;
@@ -113,7 +198,8 @@ img {
   bottom: 0;
 }
 .total-points {
-  font-weight: 800;
-  font-size: 22px;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }
 </style>
