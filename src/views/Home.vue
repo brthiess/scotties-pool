@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Leaderboard :teams="teams" :users="users" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Leaderboard from "@/components/Leaderboard.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    HelloWorld
-  }
-}
+    Leaderboard,
+  },
+  props: {
+    teams: Array,
+    users: Array,
+  },
+};
 </script>
+
+<style>
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #fafafa;
+}
+</style>
