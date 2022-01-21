@@ -60,14 +60,14 @@ const users = [
   {
     teamName: "Super long Team Name",
     realName: "Alison Thiessen",
-    picks: [1, 2, 3, 5],
+    picks: [4, 2, 3, 5],
     img: "a.png",
     id: 3,
   },
   {
     teamName: "Shortname",
     realName: "Alison Thiessen",
-    picks: [1, 2, 3, 5],
+    picks: [1, 2, 4, 5],
     img: "a.png",
     id: 4,
   },

@@ -3,7 +3,7 @@
     <div class="leaderboard">Leaderboard</div>
     <ul>
       <li v-for="(leader, index) in leaders" :key="leader.teamName">
-        <router-link :to="'/player/' + leader.id">Hi</router-link> |
+        <router-link class="link" :to="'/player/' + leader.id"></router-link>
         <div class="place">{{ index + 1 }}</div>
         <div class="avatar"><img :src="leader.img" /></div>
         <div class="name">{{ leader.teamName }}</div>
@@ -28,7 +28,7 @@ export default {
         leaders.push(this.users[i]);
         leaders[i].totalPoints = totalPoints;
       }
-      return leaders;
+      return leaders.sort((a, b) => (a.totalPoints < b.totalPoints ? 1 : -1));
     },
   },
   methods: {
@@ -75,6 +75,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  position: relative;
 }
 li:nth-child(2n) {
   background-color: #eee;
@@ -85,7 +86,7 @@ li:nth-child(2n + 1) {
 .place {
   font-size: 24px;
   font-weight: 600;
-  width: 30px;
+  width: 10px;
   flex-shrink: 0;
 }
 .avatar {
@@ -103,5 +104,16 @@ img {
 }
 .name {
   width: 100px;
+}
+.link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.total-points {
+  font-weight: 800;
+  font-size: 22px;
 }
 </style>
