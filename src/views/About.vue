@@ -10,6 +10,7 @@
         </div>
         <div class="team-name">
           {{ getTeamFromId(pick).name }}
+          <div class="subname">{{ getTeamFromId(pick).subName }}</div>
           <div class="points-per-win">
             {{ getTeamFromId(pick).pointsPerWin }}
             <span class="points-per-win-text">Points/Win</span>
@@ -78,14 +79,15 @@ h4 {
 ul {
   list-style: none;
   padding: 0 20px;
+  margin-bottom: 100px;
 }
 li {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   background: #eee;
   margin: 30px auto;
-  padding: 10px 30px;
+  padding: 10px 15px;
   display: flex;
-  height: 80px;
+  height: 100px;
   align-items: center;
   max-width: 400px;
 }
@@ -101,6 +103,7 @@ li {
   font-size: 18px;
   display: flex;
   align-items: center;
+  margin-top: 10px;
 }
 .points-per-win-total-points {
   margin-left: auto;
@@ -125,12 +128,15 @@ li {
 .team-name {
   font-size: 22px;
   width: 180px;
-  flex-shrink: 0;
 }
 img {
   height: 100%;
   width: 100%;
   object-position: center;
   object-fit: cover;
+}
+.subname {
+  font-size: 15px;
+  color: #666;
 }
 </style>

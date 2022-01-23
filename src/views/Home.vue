@@ -22,7 +22,6 @@ export default {
 
 <style>
 * {
-  font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
 }

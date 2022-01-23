@@ -22,10 +22,11 @@
         <router-link class="link" :to="'/player/' + leader.id"></router-link>
         <div class="place">{{ index + 1 }}</div>
         <div class="avatar-name">
-          <div class="avatar"><img :src="leader.img" /></div>
           <div class="name">{{ leader.teamName }}</div>
         </div>
-        <div class="total-points">{{ leader.totalPoints }}</div>
+        <div class="total-points">
+          {{ Math.round(leader.totalPoints * 10) / 10 }}
+        </div>
       </li>
     </ul>
   </div>
@@ -165,9 +166,9 @@ li:nth-child(2n + 1) {
 .place {
   font-size: 24px;
   font-weight: 600;
-  width: 10px;
   flex-shrink: 0;
   color: blue;
+  width: 100px;
 }
 .avatar-name {
   display: flex;
@@ -187,7 +188,7 @@ img {
   border-radius: 30px;
 }
 .name {
-  width: 100px;
+  width: 160px;
   font-weight: bold;
 }
 .link {
