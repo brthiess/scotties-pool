@@ -1,7 +1,10 @@
 <template>
   <div class="about">
     <h1>{{ currentUser.teamName }}</h1>
-    <h3>{{ currentUser.realName }}</h3>
+    <h3>
+      <span class="total-points-header">{{ getTotalPoints(currentUser) }}</span>
+      Points
+    </h3>
     <h4>Picks</h4>
     <ul>
       <li v-for="(pick, index) in currentUser.picks" :key="index">
@@ -51,6 +54,20 @@ export default {
         }
       }
     },
+    getTotalPoints(user) {
+      let userPoints = 0;
+      for (let i = 0; i < user.picks.length; i++) {
+        userPoints += this.getTeamPoints(user.picks[i]);
+      }
+      return userPoints;
+    },
+    getTeamPoints(teamId) {
+      for (let i = 0; i < this.teams.length; i++) {
+        if (this.teams[i].id == teamId) {
+          return this.teams[i].wins * this.teams[i].pointsPerWin;
+        }
+      }
+    },
   },
 };
 </script>
@@ -58,7 +75,7 @@ export default {
 <style scoped>
 h1 {
   text-align: center;
-  padding: 30px 20px 5px;
+  padding: 30px 20px;
   background: #242460;
   color: white;
   font-size: 40px;
@@ -67,9 +84,13 @@ h3 {
   font-weight: 300;
   text-align: center;
   padding: 0 20px 20px;
-  background: #242460;
-  color: white;
-  color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+}
+.total-points-header {
+  font-weight: bold;
+  font-size: 30px;
+  width: 100%;
+  display: block;
 }
 h4 {
   font-size: 26px;
