@@ -59,7 +59,7 @@ export default {
       for (const teamId in popularPicks) {
         let team = this.getTeamFromId(teamId);
         team.totalPicks = popularPicks[teamId];
-        team.percentageOfTotalPicks = (team.totalPicks / totalPicks) * 100;
+        team.percentageOfTotalPicks = (team.totalPicks / totalPicks) * 6 * 100;
         popularTeams.push(this.getTeamFromId(teamId));
       }
       return popularTeams;
