@@ -39,17 +39,17 @@
       <div class="row">
         <p class="province">SK</p>
         <p class="team-name">Barker</p>
-        <p class="points-per-win">2.5</p>
+        <p class="points-per-win">2.8</p>
       </div>
       <div class="row">
         <p class="province">PEI</p>
         <p class="team-name">Birt</p>
-        <p class="points-per-win">2.6</p>
+        <p class="points-per-win">3.0</p>
       </div>
       <div class="row">
         <p class="province">NB</p>
         <p class="team-name">Crawford</p>
-        <p class="points-per-win">2.7</p>
+        <p class="points-per-win">3.0</p>
       </div>
       <div class="row">
         <p class="province">NFLD</p>

@@ -23,6 +23,30 @@
         </div>
       </li>
     </ul>
+    <h2>Best Performing Teams</h2>
+    <ul>
+      <li v-for="team in bestTeams" :key="team.teamId">
+        <div class="team-logo">
+          <img :src="team.image" />
+        </div>
+        <div class="team-name team-name-performing">
+          {{ team.name }}
+          <div class="subname">{{ team.subName }}</div>
+          <div class="team-picks">
+            <div class="team-points-per-win">
+              {{ team.pointsPerWin }} Pts/Win
+            </div>
+          </div>
+        </div>
+
+        <div class="team-percentage">
+          <div class="team-picks-percentage-number">
+            {{ Math.round(team.totalPoints * 10) / 10 }}
+          </div>
+          Total Points
+        </div>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -62,7 +86,18 @@ export default {
         team.percentageOfTotalPicks = (team.totalPicks / totalPicks) * 6 * 100;
         popularTeams.push(this.getTeamFromId(teamId));
       }
-      return popularTeams;
+      return popularTeams.sort((a, b) =>
+        a.percentageOfTotalPicks < b.percentageOfTotalPicks ? 1 : -1
+      );
+    },
+    bestTeams() {
+      let bestTeams = [];
+      for (let i = 0; i < this.teams.length; i++) {
+        bestTeams.push(this.teams[i]);
+        bestTeams[i].totalPoints =
+          this.teams[i].pointsPerWin * this.teams[i].wins;
+      }
+      return bestTeams.sort((a, b) => (a.totalPoints < b.totalPoints ? 1 : -1));
     },
   },
 };
@@ -118,6 +153,9 @@ li {
   font-size: 17px;
   width: 120px;
 }
+.team-name-performing {
+  margin-right: auto;
+}
 img {
   height: 100%;
   width: 100%;
@@ -129,9 +167,15 @@ img {
   color: #666;
 }
 .team-picks-number {
-  font-weight: bold;
   font-size: 18px;
   color: #333;
+}
+.team-points-per-win {
+  font-size: 14px;
+  color: #666;
+  margin-left: 0;
+  text-align: left;
+  margin-top: 10px;
 }
 .team-picks-percentage-number {
   font-weight: bold;
@@ -143,5 +187,8 @@ img {
   text-align: center;
   color: #888;
   font-size: 14px;
+}
+.about {
+  margin-bottom: 100px;
 }
 </style>
