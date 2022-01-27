@@ -74,6 +74,7 @@ export default {
 .leaderboard-container {
   max-width: 600px;
   margin: auto;
+  margin-bottom: 100px;
 }
 @media only screen and (min-width: 700px) {
   .leaderboard-container {
