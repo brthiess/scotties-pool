@@ -75,7 +75,7 @@ const teams = [
   {
     name: "NWT",
     subName: "Galusha",
-    image: "nwt.png",
+    image: "nwt4.jpg",
     pointsPerWin: 3.0,
     wins: 0,
     id: 9,
@@ -167,6 +167,34 @@ const users = [
     picks: [15, 12, 3, 1, 8, 6],
     img: "rock.png",
     id: 2,
+  },
+  {
+    teamName: "Cool Rockin' Grandpa",
+    realName: "",
+    picks: [7, 3, 4, 2, 1, 16],
+    img: "rock.png",
+    id: 3,
+  },
+  {
+    teamName: "Cool Rockin' Grandma",
+    realName: "",
+    picks: [11, 1, 13, 15, 8, 6],
+    img: "rock.png",
+    id: 4,
+  },
+  {
+    teamName: "Ken D.",
+    realName: "",
+    picks: [18, 2, 7, 8, 6, 3],
+    img: "rock.png",
+    id: 5,
+  },
+  {
+    teamName: "Manitoba Tuckers",
+    realName: "",
+    picks: [15, 6, 9, 2, 12, 3],
+    img: "rock.png",
+    id: 6,
   },
 ];
 
