@@ -161,6 +161,13 @@ const users = [
     img: "rock.png",
     id: 1,
   },
+  {
+    teamName: "Wide & Heavy",
+    realName: "",
+    picks: [15, 12, 3, 1, 8, 6],
+    img: "rock.png",
+    id: 2,
+  },
 ];
 
 const routes = [
