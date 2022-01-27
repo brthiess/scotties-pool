@@ -8,7 +8,7 @@
         <div class="left">&#9825;</div>
       </div>
       <div class="text">
-        <span class="scotties">Scotties</span>
+        <span class="scotties">Scotties Pool</span>
         <span class="leaderboard-text">Leaderboard</span>
       </div>
     </div>
@@ -136,10 +136,10 @@ ul {
   text-transform: uppercase;
 }
 .scotties {
-  font-size: 30px;
+  font-size: 22px;
 }
 .leaderboard-text {
-  font-size: 20px;
+  font-size: 23.8px;
 }
 .header {
   text-transform: uppercase;

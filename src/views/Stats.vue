@@ -113,7 +113,7 @@ h1 {
 }
 h2 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 li {

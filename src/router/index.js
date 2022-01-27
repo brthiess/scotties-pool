@@ -196,6 +196,13 @@ const users = [
     img: "rock.png",
     id: 6,
   },
+  {
+    teamName: "Count 'em up",
+    realName: "",
+    picks: [16, 8, 6, 4, 18, 1],
+    img: "rock.png",
+    id: 7,
+  },
 ];
 
 const routes = [
