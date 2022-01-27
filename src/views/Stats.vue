@@ -92,6 +92,10 @@ li {
 .team-name {
   width: 200px;
 }
+ul {
+  max-width: 600px;
+  margin: auto;
+}
 li {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   background: #eee;
@@ -99,7 +103,7 @@ li {
   display: flex;
   height: 100px;
   align-items: center;
-  max-width: 400px;
+  width: 100%;
 }
 
 .team-logo {

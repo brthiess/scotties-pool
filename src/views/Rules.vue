@@ -17,39 +17,14 @@
         <p class="points-per-win"><strong>Pts/Win</strong></p>
       </div>
       <div class="row">
-        <p class="province">NB</p>
-        <p class="team-name">Crawford</p>
-        <p class="points-per-win">2.7</p>
-      </div>
-      <div class="row">
-        <p class="province">NFLD</p>
-        <p class="team-name">Hill</p>
-        <p class="points-per-win">5.5</p>
-      </div>
-      <div class="row">
-        <p class="province">NO</p>
-        <p class="team-name">McCarville</p>
-        <p class="points-per-win">1.7</p>
-      </div>
-      <div class="row">
-        <p class="province">NU</p>
-        <p class="team-name">Macphail</p>
-        <p class="points-per-win">12</p>
-      </div>
-      <div class="row">
-        <p class="province">PEI</p>
-        <p class="team-name">Birt</p>
-        <p class="points-per-win">2.1</p>
-      </div>
-      <div class="row">
-        <p class="province">SK</p>
-        <p class="team-name">Barker</p>
-        <p class="points-per-win">2.7</p>
-      </div>
-      <div class="row">
         <p class="province">WC1</p>
         <p class="team-name">Fleury</p>
         <p class="points-per-win">1.1</p>
+      </div>
+      <div class="row">
+        <p class="province">WC3</p>
+        <p class="team-name">Miskew</p>
+        <p class="points-per-win">1.3</p>
       </div>
       <div class="row">
         <p class="province">WC2</p>
@@ -57,40 +32,51 @@
         <p class="points-per-win">1.4</p>
       </div>
       <div class="row">
-        <p class="province">WC3</p>
-        <p class="team-name">Miskew</p>
-        <p class="points-per-win">1.3</p>
+        <p class="province">NO</p>
+        <p class="team-name">McCarville</p>
+        <p class="points-per-win">1.7</p>
       </div>
+      <div class="row">
+        <p class="province">SK</p>
+        <p class="team-name">Barker</p>
+        <p class="points-per-win">2.5</p>
+      </div>
+      <div class="row">
+        <p class="province">PEI</p>
+        <p class="team-name">Birt</p>
+        <p class="points-per-win">2.6</p>
+      </div>
+      <div class="row">
+        <p class="province">NB</p>
+        <p class="team-name">Crawford</p>
+        <p class="points-per-win">2.7</p>
+      </div>
+      <div class="row">
+        <p class="province">NFLD</p>
+        <p class="team-name">Hill</p>
+        <p class="points-per-win">5.0</p>
+      </div>
+      <div class="row">
+        <p class="province">NU</p>
+        <p class="team-name">Macphail</p>
+        <p class="points-per-win">12</p>
+      </div>
+
       <br /><br />
-      <div class="row">
-        <p class="province">AB</p>
-        <p class="team-name">Walker</p>
-        <p class="points-per-win">1.2</p>
-      </div>
-      <div class="row">
-        <p class="province">BC</p>
-        <p class="team-name">Arsenault</p>
-        <p class="points-per-win">2.8</p>
-      </div>
       <div class="row">
         <p class="province">CA</p>
         <p class="team-name">Einarson</p>
         <p class="points-per-win">1</p>
       </div>
       <div class="row">
+        <p class="province">AB</p>
+        <p class="team-name">Walker</p>
+        <p class="points-per-win">1.2</p>
+      </div>
+      <div class="row">
         <p class="province">MB</p>
         <p class="team-name">Zacharias</p>
         <p class="points-per-win">1.8</p>
-      </div>
-      <div class="row">
-        <p class="province">NWT</p>
-        <p class="team-name">Galusha</p>
-        <p class="points-per-win">3.1</p>
-      </div>
-      <div class="row">
-        <p class="province">NS</p>
-        <p class="team-name">Black</p>
-        <p class="points-per-win">4.5</p>
       </div>
       <div class="row">
         <p class="province">ON</p>
@@ -100,7 +86,22 @@
       <div class="row">
         <p class="province">QC</p>
         <p class="team-name">St. Georges</p>
-        <p class="points-per-win">1.7</p>
+        <p class="points-per-win">2.0</p>
+      </div>
+      <div class="row">
+        <p class="province">BC</p>
+        <p class="team-name">Arsenault</p>
+        <p class="points-per-win">3.0</p>
+      </div>
+      <div class="row">
+        <p class="province">NWT</p>
+        <p class="team-name">Galusha</p>
+        <p class="points-per-win">3.0</p>
+      </div>
+      <div class="row">
+        <p class="province">NS</p>
+        <p class="team-name">Black</p>
+        <p class="points-per-win">4.5</p>
       </div>
       <div class="row">
         <p class="province">YK</p>
@@ -140,5 +141,8 @@ p {
 }
 .team-name {
   width: 140px;
+}
+.about {
+  margin-bottom: 100px;
 }
 </style>

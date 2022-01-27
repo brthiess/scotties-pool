@@ -51,6 +51,14 @@ nav {
   z-index: 9;
   box-shadow: 0px -2px 20px 10px rgba(255, 255, 255, 1);
 }
+@media only screen and (min-width: 600px) {
+  nav {
+    max-width: 600px;
+    left: calc(50% - 300px);
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+}
 .leaderboard-nav-item {
   display: flex;
   flex-flow: column;
