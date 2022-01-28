@@ -259,6 +259,48 @@ const users = [
     img: "rock.png",
     id: 15,
   },
+  {
+    teamName: "Rock Stars",
+    realName: "",
+    picks: [1, 6, 8, 12, 16, 18],
+    img: "rock.png",
+    id: 16,
+  },
+  {
+    teamName: "What a Miskew",
+    realName: "",
+    picks: [3, 8, 12, 15, 16, 17],
+    img: "rock.png",
+    id: 17,
+  },
+  {
+    teamName: "Curl Power",
+    realName: "",
+    picks: [1, 6, 11, 15, 16, 18],
+    img: "rock.png",
+    id: 18,
+  },
+  {
+    teamName: "Rock ‘Em",
+    realName: "",
+    picks: [3, 4, 7, 13, 15, 18],
+    img: "rock.png",
+    id: 19,
+  },
+  {
+    teamName: "House of Heys",
+    realName: "",
+    picks: [1, 2, 3, 5, 6, 18],
+    img: "rock.png",
+    id: 20,
+  },
+  {
+    teamName: "Rolling Stones",
+    realName: "",
+    picks: [1, 3, 7, 10, 14, 18],
+    img: "rock.png",
+    id: 21,
+  },
 ];
 
 const routes = [
