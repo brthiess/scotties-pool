@@ -29,13 +29,13 @@
 
 <style>
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html {
-  background: #fafafa;
+  background: #ece1cf;
 }
 nav {
   position: fixed;
@@ -49,7 +49,7 @@ nav {
   justify-content: space-between;
   color: #888;
   z-index: 9;
-  box-shadow: 0px -2px 20px 10px rgba(255, 255, 255, 1);
+  box-shadow: 0px -2px 20px 10px #ece1cf;
 }
 @media only screen and (min-width: 600px) {
   nav {

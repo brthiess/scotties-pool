@@ -12,21 +12,22 @@
         <span class="leaderboard-text">Leaderboard</span>
       </div>
     </div>
-    <div class="header">
-      <div class="place-header">Place</div>
-      <div class="team-name-header">Team Name</div>
-      <div class="points-header">Points</div>
-    </div>
     <ul>
       <li v-for="(leader, index) in leaders" :key="leader.teamName">
         <router-link class="link" :to="'/player/' + leader.id"></router-link>
-        <div class="place">{{ index + 1 }}</div>
+        <div class="place" :class="getLeaderboardClass(index + 1)">
+          {{ index + 1 }}
+          <span class="ordinal">{{ getLeaderboardPlaceText(index + 1) }}</span>
+        </div>
         <div class="avatar-name">
           <div class="name">{{ leader.teamName }}</div>
         </div>
+
         <div class="total-points">
-          {{ Math.round(leader.totalPoints * 10) / 10 }}
+          {{ Math.round(leader.totalPoints * 10) / 10
+          }}<span class="pts">pts</span>
         </div>
+        <div class="chevron">›</div>
       </li>
     </ul>
   </div>
@@ -64,6 +65,35 @@ export default {
           return this.teams[i].wins * this.teams[i].pointsPerWin;
         }
       }
+    },
+    getLeaderboardClass(index) {
+      if (index == 1) {
+        return "first shimmer";
+      }
+      if (index == 2) {
+        return "second";
+      }
+      if (index == 3) {
+        return "third";
+      }
+      return " ";
+    },
+    getLeaderboardPlaceText(index) {
+      return this.ordinal_suffix_of(index);
+    },
+    ordinal_suffix_of(i) {
+      var j = i % 10,
+        k = i % 100;
+      if (j == 1 && k != 11) {
+        return "st";
+      }
+      if (j == 2 && k != 12) {
+        return "nd";
+      }
+      if (j == 3 && k != 13) {
+        return "rd";
+      }
+      return "th";
     },
   },
 };
@@ -136,7 +166,7 @@ ul {
   text-transform: uppercase;
 }
 .scotties {
-  font-size: 22px;
+  font-size: 22.5px;
 }
 .leaderboard-text {
   font-size: 23.8px;
@@ -155,25 +185,46 @@ li {
   height: 80px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
   position: relative;
-}
-li:nth-child(2n) {
-  background-color: #eee;
-}
-li:nth-child(2n + 1) {
-  background: white;
+  margin: 10px 0;
+  background: #f3f3f3;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .place {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   flex-shrink: 0;
-  color: blue;
-  width: 100px;
+  color: #333;
+  width: 70px;
+  padding: 0 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.place.first {
+  background: linear-gradient(180deg, #f7ab20 0%, #f7b542 100%);
+  color: white;
+}
+.place.second {
+  background: linear-gradient(0deg, rgb(197 197 197) 0%, rgb(223 223 223) 100%);
+  color: white;
+}
+.place.third {
+  background: linear-gradient(180deg, #bd6c4d 0%, #bd6c4d 100%);
+  color: white;
+}
+.ordinal {
+  font-size: 14px;
+  margin-top: 4px;
 }
 .avatar-name {
   display: flex;
   align-items: center;
+  color: #666;
+  font-weight: 500;
+  font-size: 16px;
 }
 .avatar {
   width: 50px;
@@ -189,8 +240,7 @@ img {
   border-radius: 30px;
 }
 .name {
-  width: 160px;
-  font-weight: bold;
+  width: 170px;
 }
 .link {
   position: absolute;
@@ -203,5 +253,36 @@ img {
   font-weight: 500;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
+  color: #555;
+}
+.pts {
+  font-size: 14px;
+  color: #777;
+}
+.chevron {
+  color: white;
+  background: #f40e04aa;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0.6;
+}
+.shimmer {
+  -webkit-mask: linear-gradient(-60deg, #000 30%, #0005, #000 70%) right/400%
+    100%;
+  background-repeat: no-repeat;
+  animation: shimmer 5s infinite;
+}
+@keyframes shimmer {
+  20% {
+    -webkit-mask-position: left;
+  }
+  100% {
+    -webkit-mask-position: left;
+  }
 }
 </style>

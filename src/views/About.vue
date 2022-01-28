@@ -147,7 +147,7 @@ li {
   overflow: hidden;
 }
 .team-name {
-  font-size: 22px;
+  font-size: 19px;
   width: 180px;
 }
 img {
@@ -157,7 +157,7 @@ img {
   object-fit: cover;
 }
 .subname {
-  font-size: 15px;
+  font-size: 14px;
   color: #666;
 }
 </style>

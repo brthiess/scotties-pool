@@ -139,6 +139,7 @@ li {
   height: 100px;
   align-items: center;
   width: 100%;
+  margin: 10px 0;
 }
 
 .team-logo {
