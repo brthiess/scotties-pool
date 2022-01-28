@@ -203,6 +203,62 @@ const users = [
     img: "rock.png",
     id: 7,
   },
+  {
+    teamName: "Manitoba Hearts Sweep Faster",
+    realName: "",
+    picks: [3, 6, 7, 9, 15, 18],
+    img: "rock.png",
+    id: 8,
+  },
+  {
+    teamName: "Housekeepers",
+    realName: "",
+    picks: [1, 8, 3, 9, 16, 18],
+    img: "rock.png",
+    id: 9,
+  },
+  {
+    teamName: "Sweeping Beauties",
+    realName: "",
+    picks: [6, 1, 3, 9, 16, 18],
+    img: "rock.png",
+    id: 10,
+  },
+  {
+    teamName: "TinyTwo",
+    realName: "",
+    picks: [6, 1, 8, 15, 16, 18],
+    img: "rock.png",
+    id: 11,
+  },
+  {
+    teamName: "Chance of Fleury",
+    realName: "",
+    picks: [9, 12, 13, 15, 16, 18],
+    img: "rock.png",
+    id: 12,
+  },
+  {
+    teamName: "1 against 7",
+    realName: "",
+    picks: [15, 6, 9, 12, 11, 18],
+    img: "rock.png",
+    id: 13,
+  },
+  {
+    teamName: "McCarvelous Shot",
+    realName: "",
+    picks: [1, 3, 6, 12, 16, 18],
+    img: "rock.png",
+    id: 14,
+  },
+  {
+    teamName: "Sweeping Beauty",
+    realName: "",
+    picks: [3, 4, 6, 8, 12, 16],
+    img: "rock.png",
+    id: 15,
+  },
 ];
 
 const routes = [

@@ -202,6 +202,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #e6e6e6;
 }
 .place.first {
   background: linear-gradient(180deg, #f7ab20 0%, #f7b542 100%);
