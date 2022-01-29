@@ -69,7 +69,7 @@ const teams = [
     subName: "Miskew",
     image: "wc3.png",
     pointsPerWin: 1.3,
-    wins: 0,
+    wins: 1,
     id: 8,
   },
   {
@@ -109,7 +109,7 @@ const teams = [
     subName: "Crawford",
     image: "new-brunswick.png",
     pointsPerWin: 3.0,
-    wins: 0,
+    wins: 1,
     id: 13,
   },
   {
@@ -125,7 +125,7 @@ const teams = [
     subName: "Birt",
     image: "pei.png",
     pointsPerWin: 3.0,
-    wins: 0,
+    wins: 1,
     id: 15,
   },
   {
@@ -133,7 +133,7 @@ const teams = [
     subName: "McCarville",
     image: "northern-ontario.jpg",
     pointsPerWin: 1.7,
-    wins: 0,
+    wins: 1,
     id: 16,
   },
   {
