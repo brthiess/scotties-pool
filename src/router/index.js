@@ -336,6 +336,20 @@ const users = [
     img: "rock.png",
     id: 26,
   },
+  {
+    teamName: "Phil's House",
+    realName: "",
+    picks: [3, 11, 12, 16, 2, 15],
+    img: "rock.png",
+    id: 27,
+  },
+  {
+    teamName: "Yellowstone",
+    realName: "",
+    picks: [6, 7, 18, 3, 10, 14],
+    img: "rock.png",
+    id: 28,
+  },
 ];
 
 const routes = [
