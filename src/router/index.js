@@ -155,7 +155,7 @@ const teams = [
 ];
 const users = [
   {
-    teamName: "The Sheetheads",
+    teamName: "Up Your Arsenault",
     realName: "",
     picks: [6, 11, 16, 8, 1, 14],
     img: "rock.png",
@@ -300,6 +300,41 @@ const users = [
     picks: [1, 3, 7, 10, 14, 18],
     img: "rock.png",
     id: 21,
+  },
+  {
+    teamName: "Hazel's Picks",
+    realName: "",
+    picks: [4, 18, 2, 5, 13, 1],
+    img: "rock.png",
+    id: 22,
+  },
+  {
+    teamName: "Matt's Mistakes",
+    realName: "",
+    picks: [3, 1, 17, 18, 16, 15],
+    img: "rock.png",
+    id: 23,
+  },
+  {
+    teamName: "Sheet Disturbers",
+    realName: "",
+    picks: [16, 18, 1, 3, 6, 12],
+    img: "rock.png",
+    id: 24,
+  },
+  {
+    teamName: "Picked based on team pictures",
+    realName: "",
+    picks: [2, 8, 5, 11, 4, 18],
+    img: "rock.png",
+    id: 25,
+  },
+  {
+    teamName: "The Kicker",
+    realName: "",
+    picks: [16, 15, 1, 18, 6, 9],
+    img: "rock.png",
+    id: 26,
   },
 ];
 
