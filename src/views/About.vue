@@ -2,7 +2,9 @@
   <div class="about">
     <h1>{{ currentUser.teamName }}</h1>
     <h3>
-      <span class="total-points-header">{{ getTotalPoints(currentUser) }}</span>
+      <span class="total-points-header">{{
+        Math.round(getTotalPoints(currentUser) * 10) / 10
+      }}</span>
       Points
     </h3>
     <h4>Picks</h4>
