@@ -21,7 +21,7 @@ const teams = [
     subName: "Barker",
     image: "saskatchewan.png",
     pointsPerWin: 2.8,
-    wins: 1,
+    wins: 2,
     id: 2,
   },
   {
@@ -53,7 +53,7 @@ const teams = [
     subName: "Fleury",
     image: "wc1.png",
     pointsPerWin: 1.1,
-    wins: 2,
+    wins: 3,
     id: 6,
   },
   {
@@ -109,7 +109,7 @@ const teams = [
     subName: "Crawford",
     image: "new-brunswick.png",
     pointsPerWin: 3.0,
-    wins: 3,
+    wins: 4,
     id: 13,
   },
   {
@@ -141,7 +141,7 @@ const teams = [
     subName: "Hill",
     image: "newfoundland.png",
     pointsPerWin: 5.0,
-    wins: 0,
+    wins: 1,
     id: 17,
   },
   {
