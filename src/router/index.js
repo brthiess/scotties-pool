@@ -13,7 +13,7 @@ const teams = [
     subName: "Walker",
     image: "alberta.png",
     pointsPerWin: 1.2,
-    wins: 1,
+    wins: 2,
     id: 1,
   },
   {
@@ -29,7 +29,7 @@ const teams = [
     subName: "Zacharias",
     image: "manitoba.png",
     pointsPerWin: 1.8,
-    wins: 1,
+    wins: 2,
     id: 3,
   },
   {
@@ -117,7 +117,7 @@ const teams = [
     subName: "Black",
     image: "nova-scotia.png",
     pointsPerWin: 4.5,
-    wins: 1,
+    wins: 2,
     id: 14,
   },
   {
@@ -149,7 +149,7 @@ const teams = [
     subName: "Einarson",
     image: "canada.png",
     pointsPerWin: 1,
-    wins: 2,
+    wins: 3,
     id: 18,
   },
 ];
