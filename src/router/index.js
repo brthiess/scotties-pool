@@ -29,7 +29,7 @@ const teams = [
     subName: "Zacharias",
     image: "manitoba.png",
     pointsPerWin: 1.8,
-    wins: 2,
+    wins: 3,
     id: 3,
   },
   {
@@ -37,7 +37,7 @@ const teams = [
     subName: "Arsenault",
     image: "bc.png",
     pointsPerWin: 3.0,
-    wins: 0,
+    wins: 1,
     id: 4,
   },
   {
@@ -61,7 +61,7 @@ const teams = [
     subName: "Carey",
     image: "wc2.png",
     pointsPerWin: 1.4,
-    wins: 1,
+    wins: 2,
     id: 7,
   },
   {
@@ -77,7 +77,7 @@ const teams = [
     subName: "Galusha",
     image: "nwt4.jpg",
     pointsPerWin: 3.0,
-    wins: 1,
+    wins: 2,
     id: 9,
   },
   {
@@ -109,7 +109,7 @@ const teams = [
     subName: "Crawford",
     image: "new-brunswick.png",
     pointsPerWin: 3.0,
-    wins: 4,
+    wins: 5,
     id: 13,
   },
   {
@@ -125,7 +125,7 @@ const teams = [
     subName: "Birt",
     image: "pei.png",
     pointsPerWin: 3.0,
-    wins: 1,
+    wins: 2,
     id: 15,
   },
   {
@@ -133,7 +133,7 @@ const teams = [
     subName: "McCarville",
     image: "northern-ontario.jpg",
     pointsPerWin: 1.7,
-    wins: 2,
+    wins: 3,
     id: 16,
   },
   {
@@ -149,7 +149,7 @@ const teams = [
     subName: "Einarson",
     image: "canada.png",
     pointsPerWin: 1,
-    wins: 3,
+    wins: 4,
     id: 18,
   },
 ];
