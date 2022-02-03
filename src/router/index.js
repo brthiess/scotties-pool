@@ -53,7 +53,7 @@ const teams = [
     subName: "Fleury",
     image: "wc1.png",
     pointsPerWin: 1.1,
-    wins: 6,
+    wins: 7,
     id: 6,
   },
   {
@@ -61,7 +61,7 @@ const teams = [
     subName: "Carey",
     image: "wc2.png",
     pointsPerWin: 1.4,
-    wins: 3,
+    wins: 4,
     id: 7,
   },
   {
@@ -69,7 +69,7 @@ const teams = [
     subName: "Miskew",
     image: "wc3.png",
     pointsPerWin: 1.3,
-    wins: 3,
+    wins: 4,
     id: 8,
   },
   {
@@ -125,7 +125,7 @@ const teams = [
     subName: "Birt",
     image: "pei.png",
     pointsPerWin: 3.0,
-    wins: 3,
+    wins: 4,
     id: 15,
   },
   {
